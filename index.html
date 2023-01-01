@@ -12,37 +12,76 @@
 </head>
 
 <style>
-	main {
+	body {
 		background-color: black;
 	}
+
+	h1 {
+		color: azure;
+	}
+	div, p, h2 {
+		color: white;
+	}
+
+
 </style>
 
 <body>
 	<main>
+
+	<ul class="nav nav-pills nav-fill">
+		<li class="nav-item">
+			<a class="nav-link" href="#eth">ETH/ERC-20</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#btc">BTC</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#doge">DOGE</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#etc">ETC</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#bcc">BCH</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#ltc">LTC</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#sol">SOL</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#xrp">XRP</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#xlm">XLM</a>
+		</li>
+	</ul>
+
 		<h1 style="text-align: center; margin: 1rem;">Benjamin Sams - CryptoWallet Public Keys</h1>
 
-		<div class="row">
-
+	<div class="container">
 			<!-- Ethereum -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="eth">
 				<img src="public/EthereumQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Ethereum public key" />
-				<h2 style="text-align: center; margin: 1rem;">Ethereum</h2>
+				<h2 style="text-align: center; margin: 1rem;">Ethereum & ERC-20 Tokens</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">0x344888C47b7Ef2f2464fc38b7be096978c9E9B3c</p>
 				</div>
 			</div>
 
 			<!-- Bitcoin -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="btc">
 				<img src="public/BitcoinQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Bitcoin public key" />
 				<h2 style="text-align: center; margin: 1rem;">Bitcoin</h2>
 				<div class="card-body">
-					<p class="card-text">bc1q3wxy2vzwcmu86yjsnzfqanlejzj9xutr5et4xd</p>
+					<p class="card-text" style="text-align: center;">bc1q3wxy2vzwcmu86yjsnzfqanlejzj9xutr5et4xd</p>
 				</div>
 			</div>
 
 			<!-- Dogecoin -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="doge">
 				<img src="public/DogecoinQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Dogecoin public key" />
 				<h2 style="text-align: center; margin: 1rem;">Dogecoin</h2>
 				<div class="card-body">
@@ -50,12 +89,8 @@
 				</div>
 			</div>
 
-		</div>
-
-		<div class="row">
-
 			<!-- Ethereum Classic -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="etc">
 				<img src="public/EthClassicQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Ethereum Classic public key" />
 				<h2 style="text-align: center; margin: 1rem;">Ethereum Classic</h2>
 				<div class="card-body">
@@ -64,7 +99,7 @@
 			</div>
 
 			<!-- Bitcoin cash -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="bcc">
 				<img src="public/BitcoinCashQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Bitcoin Cash public key" />
 				<h2 style="text-align: center; margin: 1rem;">Bitcoin Cash</h2>
 				<div class="card-body">
@@ -73,7 +108,7 @@
 			</div>
 
 			<!-- Litecoin -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="ltc">
 				<img src="public/LitecoinQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Litecoin public key" />
 				<h2 style="text-align: center; margin: 1rem;">Litecoin</h2>
 				<div class="card-body">
@@ -81,12 +116,8 @@
 				</div>
 			</div>
 
-		</div>
-
-		<div class="row">
-
 			<!-- Solana -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="sol">
 				<img src="public/SolanaQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my XRP public key" />
 				<h2 style="text-align: center; margin: 1rem;">Solana</h2>
 				<div class="card-body">
@@ -95,7 +126,7 @@
 			</div>
 
 			<!-- XRP -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="xrp">
 				<img src="public/XRP_QR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my XRP public key" />
 				<h2 style="text-align: center; margin: 1rem;">XRP</h2>
 				<div class="card-body">
@@ -104,14 +135,13 @@
 			</div>
 
 			<!-- Stellar lumens -->
-			<div class="card col" style="margin: 2rem;">
+			<div class="card col" style="margin: 2rem;" id="xlm">
 				<img src="public/StellarQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Stellar Lumens public key" />
 				<h2 style="text-align: center; margin: 1rem;">Stellar Lumens</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">GCBZRJ7NZNQ3BQXZFXCPGOGXGZ2652Z6MVLJPOI2X6TFS657ZXV4K4BN</p>
 				</div>
 			</div>
-
 		</div>
 
 	</main>
