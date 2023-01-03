@@ -19,130 +19,289 @@
 	h1 {
 		color: azure;
 	}
-	div, p, h2 {
-		color: white;
+
+	div,
+	p,
+	h2 {
+		color: black;
 	}
 
-
+	/* motion */
+	.animated-box-eth {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #00c3ff, #fe55f3);
+		border-radius: 1%;
+    background-size: 100% 500%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-btc {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #ffe100, #885bf0);
+		border-radius: 1%;
+    background-size: 200% 100%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-doge {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #fdfdd2, #988201);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-etc {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #74e49f, #3c00ef);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-bch {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #fa73fe, #26ff00);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-ltc {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #f7f7f5, #6bc720);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-sol {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #51ff16, #ba64e8);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-xrp {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #91b1fa, #ff00ef);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+.animated-box-xlm {
+    animation: gradient-animation 8s ease infinite;
+    background: linear-gradient(227deg, #00ffdd, #ff00ef);
+		border-radius: 1%;
+    background-size: 100% 200%;
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+}
+@keyframes gradient-animation {
+    0%{background-position:9% 0%}
+    50%{background-position:92% 100%}
+    100%{background-position:9% 0%}
+}
 </style>
 
 <body>
 	<main>
 
-	<ul class="nav nav-pills nav-fill">
-		<li class="nav-item">
-			<a class="nav-link" href="#eth">ETH/ERC-20</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#btc">BTC</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#doge">DOGE</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#etc">ETC</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#bcc">BCH</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#ltc">LTC</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#sol">SOL</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#xrp">XRP</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#xlm">XLM</a>
-		</li>
-	</ul>
+		<ul class="nav nav-pills nav-fill">
+			<li class="nav-item">
+				<a class="nav-link" href="#eth">ETH/ERC-20</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#btc">BTC</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#doge">DOGE</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#etc">ETC</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#bcc">BCH</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#ltc">LTC</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#sol">SOL</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#xrp">XRP</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#xlm">XLM</a>
+			</li>
+		</ul>
 
 		<h1 style="text-align: center; margin: 1rem;">Benjamin Sams - CryptoWallet Public Keys</h1>
 
-	<div class="container">
+		<div class="container">
+
 			<!-- Ethereum -->
-			<div class="card col" style="margin: 2rem;" id="eth">
-				<img src="public/EthereumQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Ethereum public key" />
-				<h2 style="text-align: center; margin: 1rem;">Ethereum & ERC-20 Tokens</h2>
-				<div class="card-body">
-					<p class="card-text" style="text-align: center">0x344888C47b7Ef2f2464fc38b7be096978c9E9B3c</p>
+			<div class="animated-box-eth" id="eth">
+				<div class="card col" style="margin: 2rem;">
+					<img src="public/EthereumQR.png" class="card-image-top" style="margin: 1rem;"
+						alt="QR for my Ethereum public key" />
+					<h2 style="text-align: center; margin: 1rem;">Ethereum & ERC-20 Tokens</h2>
+					<div class="card-body">
+						<p class="card-text" style="text-align: center">0x344888C47b7Ef2f2464fc38b7be096978c9E9B3c</p>
+						<div class="d-grid gap-2 col-6 mx-auto">
+						<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Ethereum & ERC-20 Tokens</button>
+						<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+						<button onClick="navigator.clipboard.writeText('0x344888C47b7Ef2f2464fc38b7be096978c9E9B3c')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
+					</div>
 				</div>
 			</div>
 
 			<!-- Bitcoin -->
-			<div class="card col" style="margin: 2rem;" id="btc">
-				<img src="public/BitcoinQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Bitcoin public key" />
+			<div class="animated-box-btc" id="btc">
+			<div class="card col" style="margin: 2rem;">
+				<img src="public/BitcoinQR.png" class="card-image-top" style="margin: 1rem;"
+					alt="QR for my Bitcoin public key" />
 				<h2 style="text-align: center; margin: 1rem;">Bitcoin</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center;">bc1q3wxy2vzwcmu86yjsnzfqanlejzj9xutr5et4xd</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Bitcoin</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('bc1q3wxy2vzwcmu86yjsnzfqanlejzj9xutr5et4xd')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- Dogecoin -->
-			<div class="card col" style="margin: 2rem;" id="doge">
-				<img src="public/DogecoinQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Dogecoin public key" />
+			<div class="animated-box-doge" id="doge">
+			<div class="card col" style="margin: 2rem;">
+				<img src="public/DogecoinQR.png" class="card-image-top" style="margin: 1rem;"
+					alt="QR for my Dogecoin public key" />
 				<h2 style="text-align: center; margin: 1rem;">Dogecoin</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">DQ3TXvvc6HKwL2UrsLdZedWWtUQmF92BqM</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Dogecoin</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('DQ3TXvvc6HKwL2UrsLdZedWWtUQmF92BqM')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- Ethereum Classic -->
-			<div class="card col" style="margin: 2rem;" id="etc">
-				<img src="public/EthClassicQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Ethereum Classic public key" />
+			<div class="animated-box-etc" id="etc">
+			<div class="card col" style="margin: 2rem;">
+				<img src="public/EthClassicQR.png" class="card-image-top" style="margin: 1rem;"
+					alt="QR for my Ethereum Classic public key" />
 				<h2 style="text-align: center; margin: 1rem;">Ethereum Classic</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">0x344888C47b7Ef2f2464fc38b7be096978c9E9B3c</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Ethereum Cash</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('0x344888C47b7Ef2f2464fc38b7be096978c9E9B3c')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- Bitcoin cash -->
-			<div class="card col" style="margin: 2rem;" id="bcc">
-				<img src="public/BitcoinCashQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Bitcoin Cash public key" />
+			<div class="animated-box-bch" id="bch">
+			<div class="card col" style="margin: 2rem;">
+				<img src="public/BitcoinCashQR.png" class="card-image-top" style="margin: 1rem;"
+					alt="QR for my Bitcoin Cash public key" />
 				<h2 style="text-align: center; margin: 1rem;">Bitcoin Cash</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">qza2y28a4h82lzt77f9jvqqnpftqnp3um5q0hzhelz</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Bitcoin Cash</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('qza2y28a4h82lzt77f9jvqqnpftqnp3um5q0hzhelz')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- Litecoin -->
-			<div class="card col" style="margin: 2rem;" id="ltc">
-				<img src="public/LitecoinQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Litecoin public key" />
+			<div class="animated-box-ltc" id="ltc">
+			<div class="card col" style="margin: 2rem;">
+				<img src="public/LitecoinQR.png" class="card-image-top" style="margin: 1rem;"
+					alt="QR for my Litecoin public key" />
 				<h2 style="text-align: center; margin: 1rem;">Litecoin</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">ltc1q66ffetq5a7xyyglkq8rm3sajqwwcrwajlavmrd</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Litecoin</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('ltc1q66ffetq5a7xyyglkq8rm3sajqwwcrwajlavmrd')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- Solana -->
-			<div class="card col" style="margin: 2rem;" id="sol">
+			<div class="animated-box-sol" id="sol">
+			<div class="card col" style="margin: 2rem;">
 				<img src="public/SolanaQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my XRP public key" />
 				<h2 style="text-align: center; margin: 1rem;">Solana</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">rNFRCYJkmKtzkaKVoRehQ6wco4KLQxigTJ</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Solana</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('rNFRCYJkmKtzkaKVoRehQ6wco4KLQxigTJ')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- XRP -->
-			<div class="card col" style="margin: 2rem;" id="xrp">
+			<div class="animated-box-xrp" id="xrp">
+				<div class="card col" style="margin: 2rem;">
 				<img src="public/XRP_QR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my XRP public key" />
 				<h2 style="text-align: center; margin: 1rem;">XRP</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">rNFRCYJkmKtzkaKVoRehQ6wco4KLQxigTJ</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About XRP</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('rNFRCYJkmKtzkaKVoRehQ6wco4KLQxigTJ')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
+			</div>
 			</div>
 
 			<!-- Stellar lumens -->
-			<div class="card col" style="margin: 2rem;" id="xlm">
-				<img src="public/StellarQR.png" class="card-image-top" style="margin: 1rem;" alt="QR for my Stellar Lumens public key" />
+			<div class="animated-box-xlm" id="xlm">
+				<div class="card col" style="margin: 2rem;">
+				<img src="public/StellarQR.png" class="card-image-top" style="margin: 1rem;"
+					alt="QR for my Stellar Lumens public key" />
 				<h2 style="text-align: center; margin: 1rem;">Stellar Lumens</h2>
 				<div class="card-body">
 					<p class="card-text" style="text-align: center">GCBZRJ7NZNQ3BQXZFXCPGOGXGZ2652Z6MVLJPOI2X6TFS657ZXV4K4BN</p>
+					<div class="d-grid gap-2 col-6 mx-auto">
+					<button onclick="window.location.href='';" class="btn btn-outline-primary" type="button" id="copy-key">About Stellar Lumens</button>
+					<button onclick="window.location.href='https://benbeast1210.github.io/crypto-wallet-landing-page/#h1';" class="btn btn-outline-primary" type="button" id="back-to-top">Back To Top</button>
+					<button onClick="navigator.clipboard.writeText('GCBZRJ7NZNQ3BQXZFXCPGOGXGZ2652Z6MVLJPOI2X6TFS657ZXV4K4BN')" class="btn btn-outline-primary" type="button" id="copy-key">Copy Key To Clipboard</button>
+					</div>
 				</div>
 			</div>
-		</div>
+		
 
 	</main>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
